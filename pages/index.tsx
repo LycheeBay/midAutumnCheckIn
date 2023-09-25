@@ -70,7 +70,12 @@ export default function Home({ data }:any) {
   };
 
   return (
-    <div className='bg-gradient-to-tl from-rose-400 to-orange-300 h-screen flex flex-col justify-center'>
+    <div className='bg-gradient-to-tl from-rose-400 to-orange-300 h-screen flex flex-col justify-center' style={{ 
+        backgroundImage: "url(/bg.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}>
       <Nav></Nav>
       <h1 className="text-center justify-center text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-amber-600 from-red-700 mt-12 pt-0">欢迎来到UTCSSA</h1>
       <h1 className="text-center text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-amber-600 from-red-700 pt-0 mb-1">2023新秋晚会</h1>      
@@ -122,7 +127,7 @@ export default function Home({ data }:any) {
                 <br></br>
                 Not registered? Click here.
         </Link>
-        <Image className = "mt-7" src = "/wst.jpeg" width = {350} height = {200} alt = "Wall Street Tequila"></Image>
+        {/*<Image className = "mt-7" src = "/wst.jpeg" width = {350} height = {200} alt = "Wall Street Tequila"></Image>*/}
       </div>
 
       <footer className="w-screen text-center mt-6">
